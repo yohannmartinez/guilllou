@@ -4,6 +4,7 @@ import { easeIn, easeInOut, motion } from "framer-motion";
 import useHeader from "./useHeader";
 import Text from "../../../components/text";
 import Button from "../../../components/button";
+import LogoWhite from "../../../assets/images/minLogoWhite.svg";
 
 const Container = styled.div`
   display: flex;
@@ -44,10 +45,24 @@ const ContentContainer = styled.div`
 `;
 
 const SubTitle = styled(Text)`
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   font-weight: 600;
   margin-bottom: 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 60px;
+    width: 60px;
+    background: ${() => `url('${LogoWhite}')`};
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -100%);
+  }
 `;
 
 const LettersContainer = styled(motion.div)`

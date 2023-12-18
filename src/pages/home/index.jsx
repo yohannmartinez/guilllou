@@ -2,9 +2,10 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "../../components/navbar";
 import Header from "./header";
 import Presentation from "./presentation";
-import Reviews from "./reviews";
 import Footer from "../../components/footer";
 import "swiper/css";
+import Partners from "./partners/partners";
+import Reviews from "../../components/reviews";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Header />
         <Presentation />
         <Reviews />
+        <Partners />
         <Footer />
       </AnimatePresence>
     </>

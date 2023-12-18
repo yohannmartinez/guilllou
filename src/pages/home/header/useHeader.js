@@ -30,10 +30,10 @@ const steps = [
   },
   {
     subTitle: "Guillou couverture",
-    title: "Ravalement",
+    title: "Démoussage",
     buttonText: "En savoir plus",
     background:
-      "https://www.cgroup.ch/wp-content/uploads/sites/3/2021/04/iStock-1273226188.jpg",
+      "https://www.satorytoiture.com/public/img/big/nettoyagejpg_63ecfae043dab.jpg",
   },
 ];
 

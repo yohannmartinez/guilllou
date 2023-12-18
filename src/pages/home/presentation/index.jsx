@@ -65,11 +65,10 @@ const Presentation = () => {
                 </StyledSectionTitle>
                 <StyledText>
                   Nous mettons notre expérience de plus de 20 ans et notre
-                  savoir-faire au service de vos travaux de couverture.
-                  Utilisant les meilleures techniques, travaillant avec des
-                  outils de qualité et en partenariat avec des marques de renom,
-                  vous vous octroierez une sérénité en nous confiant votre
-                  projet.
+                  savoir-faire au service de vos travaux de couverture. Alliant
+                  expertise technique, matériaux de qualité supérieure, un souci
+                  méticuleux du détail et des partenaires de renom, votre projet
+                  n'attend que nous.
                 </StyledText>
               </ContentWrapper>
             </SideBySide>
@@ -78,16 +77,20 @@ const Presentation = () => {
           <FadeOnView>
             <SideBySide imagePosition="right" image={Garantie}>
               <ContentWrapper>
-                <StyledSectionTitle>
-                  Une garantie 10 ans constructeur
-                </StyledSectionTitle>
+                <StyledSectionTitle>Une garantie 10 ans</StyledSectionTitle>
                 <StyledText>
                   Tous les travaux effectués par notre entreprises sont
                   accompagnés d'une garantie de 10 ans En gage de qualité. Nous
                   tenons à ce que nos clients puisse avancer sereinement avec
                   les modifications que nous apportons.
                 </StyledText>
-                <StyledButton background="black" color="white">
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
                   Faire un devis
                 </StyledButton>
               </ContentWrapper>
@@ -95,17 +98,23 @@ const Presentation = () => {
           </FadeOnView>
           <Gap />
           <FadeOnView>
-            <SideBySide image={ZoneActivite}>
+            <SideBySide coordinates={true}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   La zone d'activité de notre entreprise
                 </StyledSectionTitle>
                 <StyledText>
-                  Nous intervenons dans tout le département de l'Eure-et-loire
-                  (28), mais aussi dans l'essone (91). Au dela-le les frais de
-                  déplacements supérieurs à 100km seront facturés.
+                  Nous intervenons principalement aux alentours de
+                  Saint-Nom-la-Bretèche mais sommes actifs dans tout le
+                  département des Yvelines (78).
                 </StyledText>
-                <StyledButton background="black" color="white">
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
                   Faire un devis
                 </StyledButton>
               </ContentWrapper>

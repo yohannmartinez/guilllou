@@ -21,9 +21,9 @@ const StyledText = styled.p`
   }
 `;
 
-const Text = ({ className, children, color }) => {
+const Text = ({ className, children, color, onClick }) => {
   return (
-    <StyledText className={className} color={color}>
+    <StyledText className={className} color={color} onClick={onClick}>
       {children}
     </StyledText>
   );

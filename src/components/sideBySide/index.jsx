@@ -1,4 +1,10 @@
 import { styled } from "styled-components";
+import mapboxgl from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import { useEffect, useRef, useState } from "react";
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoieW9oYW5ubWFydGluZXptaXNwb3RzIiwiYSI6ImNrZjQybmwwNzA5Mngyc280dzBpazFsMnEifQ.h3FxRjUqVjCo3AALyuzW1w";
 
 const Container = styled.div`
   width: 100%;
@@ -46,10 +52,41 @@ const Content = styled.div`
   align-items: center;
 `;
 
-const SideBySide = ({ className, imagePosition, children, image }) => {
+const SideBySide = ({
+  coordinates,
+  className,
+  imagePosition,
+  children,
+  image,
+}) => {
+  const mapContainer = useRef(null);
+  const map = useRef(null);
+  const [lng, setLng] = useState(2.019);
+  const [lat, setLat] = useState(48.857);
+  const [zoom, setZoom] = useState(9);
+
+  useEffect(() => {
+    if (map.current || !coordinates) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: "mapbox://styles/mapbox/dark-v11",
+      center: [lng, lat],
+      zoom: zoom,
+    });
+
+    new mapboxgl.Marker().setLngLat([2.019, 48.857]).addTo(map.current);
+
+    map.current.on("move", () => {
+      setLng(map.current.getCenter().lng.toFixed(4));
+      setLat(map.current.getCenter().lat.toFixed(4));
+      setZoom(map.current.getZoom().toFixed(2));
+    });
+  });
+
   return (
     <Container className={className} imagePosition={imagePosition}>
-      <Image image={image} />
+      {image && <Image image={image} />}
+      {coordinates && <div ref={mapContainer} className="map-container" />}
       <Content>{children}</Content>
     </Container>
   );
