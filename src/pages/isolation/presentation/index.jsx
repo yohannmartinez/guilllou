@@ -6,7 +6,7 @@ import Title from "../../../components/title";
 
 import Layout from "../../../components/layout";
 import FadeOnView from "../../../components/fadeOnview";
-import LogoWhite from "../../../assets/images/minLogoBlack.svg";
+import LogoWhite from "../../../assets/images/minLogoBlack.png";
 import Text from "../../../components/text";
 import SideBySide from "../../../components/sideBySide";
 import SectionTitle from "../../../components/sectionTitle";
@@ -95,7 +95,7 @@ const Presentation = () => {
             <Logo>Guillou couverture</Logo>
             <StyledTitle>Isolation</StyledTitle>
             <Gap />
-            <SideBySide imagePosition="right" image={Isolation1}>
+            <SideBySide imagePosition="left" image={Isolation1}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   L'isolation de vos combles
@@ -110,7 +110,7 @@ const Presentation = () => {
               </ContentWrapper>
             </SideBySide>
             <Gap />
-            <SideBySide imagePosition="left" image={Isolation2}>
+            <SideBySide imagePosition="right" image={Isolation2}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   Notre approche professionnelle
@@ -126,7 +126,7 @@ const Presentation = () => {
               </ContentWrapper>
             </SideBySide>
             <Gap />
-            <SideBySide imagePosition="right" image={Isolation3}>
+            <SideBySide imagePosition="left" image={Isolation3}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   Un avenir plus confortable et durable

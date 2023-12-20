@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
-import LogoSvg from "../../assets/images/minLogo.svg";
+import LogoSvg from "../../assets/images/minLogo.png";
 import PageWrap from "../pageWrap";
 import Text from "../text";
 import { colors } from "../../styles";

@@ -45,8 +45,6 @@ const Logo = styled.div`
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(1);
-  opacity: 0.5;
   cursor: pointer;
   transition: 0.5s;
   &:hover {

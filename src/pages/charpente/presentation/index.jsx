@@ -6,7 +6,7 @@ import Title from "../../../components/title";
 
 import Layout from "../../../components/layout";
 import FadeOnView from "../../../components/fadeOnview";
-import LogoWhite from "../../../assets/images/minLogoBlack.svg";
+import LogoWhite from "../../../assets/images/minLogoBlack.png";
 import Text from "../../../components/text";
 import SideBySide from "../../../components/sideBySide";
 import SectionTitle from "../../../components/sectionTitle";

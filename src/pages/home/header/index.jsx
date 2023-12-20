@@ -4,7 +4,7 @@ import { easeIn, easeInOut, motion } from "framer-motion";
 import useHeader from "./useHeader";
 import Text from "../../../components/text";
 import Button from "../../../components/button";
-import LogoWhite from "../../../assets/images/minLogoWhite.svg";
+import LogoWhite from "../../../assets/images/minLogoWhite.png";
 
 const Container = styled.div`
   display: flex;
