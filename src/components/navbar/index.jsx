@@ -6,6 +6,7 @@ import PageWrap from "../pageWrap";
 import Text from "../text";
 import { colors } from "../../styles";
 import Button from "../button";
+import { useLocation } from "react-router-dom";
 
 const Container = styled(motion.div)`
   display: flex;
@@ -47,12 +48,17 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledText = styled(Text)`
+  font-weight: ${(props) => (props.isBold ? "bolder" : "auto")};
+  color: ${(props) => (props.isBold ? "black" : "auto")};
   &:hover {
     color: #000;
   }
 `;
 
 const Navbar = ({ bottomBar }) => {
+  const location = useLocation();
+  const path = location.pathname;
+  const isCurrentLocation = (route) => route === path;
   return (
     <Container
       bottomBar={bottomBar}
@@ -65,22 +71,49 @@ const Navbar = ({ bottomBar }) => {
           <Logo />
           <LinksContainer>
             <Link onClick={() => (window.location.href = "/")}>
-              <StyledText color={colors.text}>Accueil</StyledText>
+              <StyledText color={colors.text} isBold={isCurrentLocation("/")}>
+                Accueil
+              </StyledText>
             </Link>
             <Link onClick={() => (window.location.href = "/couverture")}>
-              <StyledText color={colors.text}>Couverture</StyledText>
+              <StyledText
+                color={colors.text}
+                isBold={isCurrentLocation("/couverture")}
+              >
+                Couverture
+              </StyledText>
             </Link>
             <Link onClick={() => (window.location.href = "/charpente")}>
-              <StyledText color={colors.text}>Charpente</StyledText>
+              <StyledText
+                color={colors.text}
+                isBold={isCurrentLocation("/charpente")}
+              >
+                Charpente
+              </StyledText>
             </Link>
             <Link onClick={() => (window.location.href = "/isolation")}>
-              <StyledText color={colors.text}>Isolation</StyledText>
+              <StyledText
+                color={colors.text}
+                isBold={isCurrentLocation("/isolation")}
+              >
+                Isolation
+              </StyledText>
             </Link>
             <Link onClick={() => (window.location.href = "/zinguerie")}>
-              <StyledText color={colors.text}>Zinguerie</StyledText>
+              <StyledText
+                color={colors.text}
+                isBold={isCurrentLocation("/zinguerie")}
+              >
+                Zinguerie
+              </StyledText>
             </Link>
             <Link onClick={() => (window.location.href = "/demoussage")}>
-              <StyledText color={colors.text}>Démoussage</StyledText>
+              <StyledText
+                color={colors.text}
+                isBold={isCurrentLocation("/demoussage")}
+              >
+                Démoussage
+              </StyledText>
             </Link>
             <StyledButton
               background={"#000"}

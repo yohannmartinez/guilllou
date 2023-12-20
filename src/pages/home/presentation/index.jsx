@@ -77,10 +77,10 @@ const Presentation = () => {
           <FadeOnView>
             <SideBySide imagePosition="right" image={Garantie}>
               <ContentWrapper>
-                <StyledSectionTitle>Une garantie 10 ans</StyledSectionTitle>
+                <StyledSectionTitle>Une garantie décennale</StyledSectionTitle>
                 <StyledText>
                   Tous les travaux effectués par notre entreprises sont
-                  accompagnés d'une garantie de 10 ans En gage de qualité. Nous
+                  accompagnés d'une garantie décennale en gage de qualité. Nous
                   tenons à ce que nos clients puisse avancer sereinement avec
                   les modifications que nous apportons.
                 </StyledText>

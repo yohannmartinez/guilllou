@@ -13,6 +13,7 @@ import SectionTitle from "../../../components/sectionTitle";
 
 import Demoussage1 from "../../../assets/images/demoussage/demoussage1.png";
 import Demoussage2 from "../../../assets/images/demoussage/demoussage2.png";
+import Button from "../../../components/button";
 
 const Wrapper = styled.div`
   display: flex;
@@ -85,6 +86,10 @@ const Gap = styled.div`
   height: 12em;
 `;
 
+const StyledButton = styled(Button)`
+  margin-top: 2em;
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -94,7 +99,7 @@ const Presentation = () => {
             <Logo>Guillou couverture</Logo>
             <StyledTitle>Démoussage</StyledTitle>
             <Gap />
-            <SideBySide imagePosition="right" image={Demoussage1}>
+            <SideBySide imagePosition="left" image={Demoussage1}>
               <ContentWrapper>
                 <StyledSectionTitle>Le démoussage</StyledSectionTitle>
                 <StyledText>
@@ -109,19 +114,34 @@ const Presentation = () => {
                   interventions et les travaux appropriés pour préserver son
                   étanchéité et sa durabilité au fil du temps.
                 </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
               </ContentWrapper>
             </SideBySide>
             <Gap />
-            <SideBySide imagePosition="left" image={Demoussage2}>
+            <SideBySide imagePosition="right" image={Demoussage2}>
               <ContentWrapper>
                 <StyledSectionTitle>Nos expertises</StyledSectionTitle>
                 <StyledText>
-                  Notre entreprise Guillou Couverture vous propose ses services
-                  d'entretien, et met à votre disposition une équipe de
-                  démoussage et de nettoyage pour votre toiture. Experts dans le
-                  domaine, cette prestation assurera une toiture plus solide,
-                  saine et étanche qui n'aura pas de difficulté à affronter les
-                  différentes intempéries et les changements climatiques.
+                  Notre entreprise{" "}
+                  <b style={{ color: "black" }}>
+                    Guillou Couverture vous propose ses services d'entretien, et
+                    met à votre disposition une équipe de démoussage et de
+                    nettoyage pour votre toiture.
+                  </b>{" "}
+                  Experts dans le domaine, cette prestation assurera{" "}
+                  <b style={{ color: "black" }}>
+                    une toiture plus solide, saine et étanche qui n'aura pas de
+                    difficulté à affronter les différentes intempéries et les
+                    changements climatiques.
+                  </b>
                 </StyledText>
               </ContentWrapper>
             </SideBySide>

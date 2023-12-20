@@ -63,7 +63,7 @@ const SideBySide = ({
   const map = useRef(null);
   const [lng, setLng] = useState(2.019);
   const [lat, setLat] = useState(48.857);
-  const [zoom, setZoom] = useState(9);
+  const [zoom, setZoom] = useState(12);
 
   useEffect(() => {
     if (map.current || !coordinates) return; // initialize map only once

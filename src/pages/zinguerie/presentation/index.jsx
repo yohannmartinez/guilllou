@@ -14,6 +14,7 @@ import SectionTitle from "../../../components/sectionTitle";
 import Zinguerie1 from "../../../assets/images/zinguerie/zinguerie2.png";
 import Zinguerie2 from "../../../assets/images/zinguerie/zinguerie3.png";
 import Zinguerie3 from "../../../assets/images/zinguerie/zinguerie1.png";
+import Button from "../../../components/button";
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,6 +87,10 @@ const Gap = styled.div`
   height: 12em;
 `;
 
+const StyledButton = styled(Button)`
+  margin-top: 2em;
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -108,6 +113,15 @@ const Presentation = () => {
                   assurant une étanchéité dans les zones où les tuiles et les
                   ardoises ne suffisent pas à une couverture complète.
                 </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
               </ContentWrapper>
             </SideBySide>
             <Gap />
@@ -116,10 +130,13 @@ const Presentation = () => {
                 <StyledSectionTitle>Nos expertises</StyledSectionTitle>
                 <StyledText>
                   Guillou Couverture propose son expertise dans de multiple
-                  interventions en zinguerie. De la préparation et la pose d’un
-                  système d’évacuation des eaux de pluies, à l’aménagement des
-                  gouttières (gouttière zinc, gouttière alu, gouttière pvc,
-                  gouttière plastique…),jusqu'à la rénovation de faîtage.
+                  interventions en zinguerie.{" "}
+                  <b style={{ color: "black" }}>
+                    De la préparation et la pose d’un système d’évacuation des
+                    eaux de pluies, à l’aménagement des gouttières (gouttière
+                    zinc, gouttière alu, gouttière pvc, gouttière
+                    plastique…),jusqu'à la rénovation de faîtage.
+                  </b>
                 </StyledText>
               </ContentWrapper>
             </SideBySide>
@@ -128,10 +145,13 @@ const Presentation = () => {
               <ContentWrapper>
                 <StyledSectionTitle>Besoin de retouches ?</StyledSectionTitle>
                 <StyledText>
-                  En effet, avec le temps, les soudures peuvent se dégrader et
-                  laisser passer l'humidité. C'est pourquoi notre équipe, engage
-                  son expertise pour régler efficacement vos problèmes de
-                  zinguerie.
+                  En effet, avec le temps,{" "}
+                  <b style={{ color: "black" }}>
+                    les soudures peuvent se dégrader et laisser passer
+                    l'humidité
+                  </b>
+                  . C'est pourquoi notre équipe, engage son expertise pour
+                  régler efficacement vos problèmes de zinguerie.
                 </StyledText>
               </ContentWrapper>
             </SideBySide>

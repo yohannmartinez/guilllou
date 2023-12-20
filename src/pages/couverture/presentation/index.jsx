@@ -14,6 +14,7 @@ import SectionTitle from "../../../components/sectionTitle";
 import Couvreur1 from "../../../assets/images/couvreur/couvreur1.png";
 import Couvreur2 from "../../../assets/images/couvreur/couvreur2.png";
 import Couvreur3 from "../../../assets/images/couvreur/couvreur3.png";
+import Button from "../../../components/button";
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,6 +87,10 @@ const Gap = styled.div`
   height: 12em;
 `;
 
+const StyledButton = styled(Button)`
+  margin-top: 2em;
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -95,7 +100,7 @@ const Presentation = () => {
             <Logo>Guillou couverture</Logo>
             <StyledTitle>Couverture</StyledTitle>
             <Gap />
-            <SideBySide imagePosition="right" image={Couvreur1}>
+            <SideBySide imagePosition="left" image={Couvreur1}>
               <ContentWrapper>
                 <StyledSectionTitle>La couverture</StyledSectionTitle>
                 <StyledText>
@@ -106,10 +111,19 @@ const Presentation = () => {
                   orienter votre choix vers la couverture la mieux adaptée à vos
                   besoins spécifiques et à votre environnement.
                 </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
               </ContentWrapper>
             </SideBySide>
             <Gap />
-            <SideBySide imagePosition="left" image={Couvreur2}>
+            <SideBySide imagePosition="right" image={Couvreur2}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   Quel que soit votre projet
@@ -117,22 +131,24 @@ const Presentation = () => {
                 <StyledText>
                   Vous pouvez faire appels à nous pour n'importe quel type de
                   projet. Voici quelques exemples:
-                  <br />
-                  - Réparation et rénovation de toiture
-                  <br />
-                  - Pose et réparation de gouttière
-                  <br />
-                  - Nettoyage de la toiture et façade
-                  <br />
-                  - Fuite et étanchéité de toiture
-                  <br />
-                  - Pose de velux
-                  <br />
+                  <b style={{ color: "black" }}>
+                    <br />
+                    - Réparation et rénovation de toiture
+                    <br />
+                    - Pose et réparation de gouttière
+                    <br />
+                    - Nettoyage de la toiture et façade
+                    <br />
+                    - Fuite et étanchéité de toiture
+                    <br />
+                    - Pose de velux
+                    <br />
+                  </b>
                 </StyledText>
               </ContentWrapper>
             </SideBySide>
             <Gap />
-            <SideBySide imagePosition="right" image={Couvreur3}>
+            <SideBySide imagePosition="left" image={Couvreur3}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   Sécurité et professionnalisme

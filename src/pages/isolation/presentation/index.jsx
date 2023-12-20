@@ -14,6 +14,7 @@ import SectionTitle from "../../../components/sectionTitle";
 import Isolation1 from "../../../assets/images/isolation/isolation1.png";
 import Isolation2 from "../../../assets/images/isolation/isolation2.png";
 import Isolation3 from "../../../assets/images/isolation/isolation3.png";
+import Button from "../../../components/button";
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,6 +87,10 @@ const Gap = styled.div`
   height: 12em;
 `;
 
+const StyledButton = styled(Button)`
+  margin-top: 2em;
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -107,6 +112,15 @@ const Presentation = () => {
                   l'isolation des combles, nous sommes là pour transformer votre
                   espace de vie.
                 </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
               </ContentWrapper>
             </SideBySide>
             <Gap />
@@ -116,12 +130,18 @@ const Presentation = () => {
                   Notre approche professionnelle
                 </StyledSectionTitle>
                 <StyledText>
-                  Nos professionnels expérimentés effectuent une évaluation
-                  approfondie de vos combles pour déterminer la meilleure
-                  solution d'isolation adaptée à vos besoins spécifiques. Que
+                  Nos professionnels expérimentés effectuent une{" "}
+                  <b style={{ color: "black" }}>
+                    évaluation approfondie de vos combles
+                  </b>{" "}
+                  pour déterminer la meilleure solution d'isolation{" "}
+                  <b style={{ color: "black" }}>adaptée à vos besoins</b>. Que
                   vous optiez pour une isolation en laine minérale, en cellulose
-                  ou tout autre matériau, nous vous garantissons une
-                  installation soigneuse et conforme aux normes en vigueur.
+                  ou tout autre matériau, nous vous garantissons une{" "}
+                  <b style={{ color: "black" }}>
+                    installation soigneuse et conforme aux normes en vigueur
+                  </b>
+                  .
                 </StyledText>
               </ContentWrapper>
             </SideBySide>
@@ -135,8 +155,11 @@ const Presentation = () => {
                   Améliorez votre qualité de vie tout en contribuant à la
                   préservation de notre planète. Contactez-nous dès aujourd'hui
                   pour discuter de vos besoins en matière d'isolation des
-                  combles. Nous sommes là pour vous guider à chaque étape, de
-                  l'évaluation initiale à la réalisation du projet.
+                  combles.{" "}
+                  <b style={{ color: "black" }}>
+                    Nous sommes là pour vous guider à chaque étape, de
+                    l'évaluation initiale à la réalisation du projet.
+                  </b>
                 </StyledText>
               </ContentWrapper>
             </SideBySide>

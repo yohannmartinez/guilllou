@@ -14,6 +14,7 @@ import SectionTitle from "../../../components/sectionTitle";
 import Charpente1 from "../../../assets/images/charpente/charpente1.png";
 import Charpente2 from "../../../assets/images/charpente/charpente2.png";
 import Charpente3 from "../../../assets/images/charpente/charpente3.png";
+import Button from "../../../components/button";
 
 const Wrapper = styled.div`
   display: flex;
@@ -86,6 +87,10 @@ const Gap = styled.div`
   height: 12em;
 `;
 
+const StyledButton = styled(Button)`
+  margin-top: 2em;
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -107,6 +112,15 @@ const Presentation = () => {
                   que les charges verticales telles que la neige ou la glace
                   dues aux conditions climatiques.
                 </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
               </ContentWrapper>
             </SideBySide>
             <Gap />
@@ -116,11 +130,19 @@ const Presentation = () => {
                   Nos préstations en charpente
                 </StyledSectionTitle>
                 <StyledText>
-                  Qu'il s'agisse de l'installation d'une charpente pour une
-                  nouvelle construction, de la réparation suite à une rénovation
-                  de couverture, ou de la protection contre les parasites, nos
-                  charpentiers qualifiés sont à votre disposition. Il peut
-                  également être préconisé de faire vérifier votre charpente
+                  Qu'il s'agisse de{" "}
+                  <b style={{ color: "black" }}>
+                    l'installation d'une charpente
+                  </b>{" "}
+                  pour une nouvelle construction, de la{" "}
+                  <b style={{ color: "black" }}>réparation</b> suite à une
+                  rénovation de couverture, ou de la{" "}
+                  <b style={{ color: "black" }}>
+                    protection contre les parasites
+                  </b>
+                  , nos charpentiers qualifiés sont à votre disposition. Il peut
+                  également être préconisé de faire{" "}
+                  <b style={{ color: "black" }}>vérifier votre charpente</b>{" "}
                   avant l'apparition de problèmes.
                 </StyledText>
               </ContentWrapper>
@@ -134,12 +156,13 @@ const Presentation = () => {
                 <StyledText>
                   Avec de nombreuses années d’expérience, Guillou couverture met
                   à votre service l'expertise de ses charpentiers pour une
-                  inspection complète de votre charpente et un devis sans
-                  engagement. Votre artisan couvreur charpentier saura vous
-                  conseiller sur le type de charpente le plus adapté à votre
-                  projet, car nous maîtrisons la conception et possédons une
-                  expérience approfondie dans la rénovation de tous types et
-                  styles de charpentes.
+                  inspection complète de votre charpente et un{" "}
+                  <b style={{ color: "black" }}>devis sans engagement</b>. Votre
+                  artisan couvreur charpentier saura vous conseiller sur le type
+                  de charpente le plus adapté à votre projet, car nous
+                  maîtrisons la conception et possédons une expérience
+                  approfondie dans la rénovation de tous types et styles de
+                  charpentes.
                 </StyledText>
               </ContentWrapper>
             </SideBySide>

@@ -6,7 +6,7 @@ const steps = [
     title: "Couverture",
     buttonText: "En savoir plus",
     background:
-      "https://www.renovationettravaux.fr/wp-content/uploads/2015/04/Pose-dune-toiture-en-tuile.jpg",
+      "https://www.charpente-classique.com/wp-content/uploads/sites/42/2020/07/calculer-poids-couverture-toiture.jpg",
   },
   {
     subTitle: "Guillou couverture",
