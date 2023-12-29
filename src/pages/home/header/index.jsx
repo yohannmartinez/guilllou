@@ -152,7 +152,7 @@ const Header = () => {
                 background={"#fff"}
                 color={"#111"}
                 onClick={() => {
-                  console.log("coucou");
+                  window.open(stepDetails.link, "_self");
                 }}
               >
                 {stepDetails.buttonText}
