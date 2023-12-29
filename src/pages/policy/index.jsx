@@ -62,7 +62,7 @@ const Policy = () => {
         <b>Contact</b>
         <br />
         Si vous avez des questions concernant notre politique de
-        confidentialité, veuillez nous contacter à guillou.couverture@gmail.com.
+        confidentialité, veuillez nous contacter à 0610400001@orange.fr
       </Text>
     </div>
   );

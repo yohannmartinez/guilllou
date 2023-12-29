@@ -75,7 +75,9 @@ const Footer = () => {
             Téléphone
           </Link>
           <Link
-            onClick={() => (window.location.href = "mailto:me@example.com")}
+            onClick={() =>
+              (window.location.href = "mailto:0610400001@orange.fr")
+            }
           >
             Adresse e-mail
           </Link>

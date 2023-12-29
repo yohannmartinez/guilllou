@@ -122,7 +122,7 @@ const Reviews = () => {
                   La satisfaction de nos clients est notre priorité !
                 </AllReviewTitle>
 
-                <a href="mailto:yohannmartinez34@gmail.com">
+                <a href="mailto:0610400001@orange.fr">
                   <Button color="black" background="white">
                     Faire un devis
                   </Button>

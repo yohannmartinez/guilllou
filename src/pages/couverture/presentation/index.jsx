@@ -115,7 +115,7 @@ const Presentation = () => {
                   background="black"
                   color="white"
                   onClick={() =>
-                    (window.location.href = "mailto:me@example.com")
+                    (window.location.href = "mailto:0610400001@orange.fr")
                   }
                 >
                   Faire un devis
@@ -182,7 +182,7 @@ const Presentation = () => {
                   background="black"
                   color="white"
                   onClick={() =>
-                    (window.location.href = "mailto:me@example.com")
+                    (window.location.href = "mailto:0610400001@orange.fr")
                   }
                 >
                   Faire un devis
