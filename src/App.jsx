@@ -5,6 +5,8 @@ import Charpente from "./pages/charpente";
 import Isolation from "./pages/isolation";
 import Zinguerie from "./pages/zinguerie";
 import Demoussage from "./pages/demoussage";
+import Policy from "./pages/policy";
+import Mentions from "./pages/mentions";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route index path="/isolation" element={<Isolation />} />
           <Route index path="/zinguerie" element={<Zinguerie />} />
           <Route index path="/demoussage" element={<Demoussage />} />
+          <Route index path="/politique" element={<Policy />} />
+          <Route index path="/mentions" element={<Mentions />} />
         </Routes>
       </BrowserRouter>
     </>

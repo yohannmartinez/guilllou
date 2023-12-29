@@ -163,6 +163,28 @@ const Presentation = () => {
                 </StyledText>
               </ContentWrapper>
             </SideBySide>
+            <Gap />
+            <SideBySide imagePosition="right" coordinates={true}>
+              <ContentWrapper>
+                <StyledSectionTitle>
+                  La zone d'activité de notre entreprise
+                </StyledSectionTitle>
+                <StyledText>
+                  Nous intervenons principalement aux alentours de
+                  Saint-Nom-la-Bretèche mais sommes actifs dans tout le
+                  département des Yvelines (78).
+                </StyledText>
+                <StyledButton
+                  background="black"
+                  color="white"
+                  onClick={() =>
+                    (window.location.href = "mailto:me@example.com")
+                  }
+                >
+                  Faire un devis
+                </StyledButton>
+              </ContentWrapper>
+            </SideBySide>
           </StyledLayout>
         </FadeOnView>
       </PageWrap>

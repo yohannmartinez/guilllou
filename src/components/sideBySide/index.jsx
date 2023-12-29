@@ -44,6 +44,47 @@ const Image = styled.div`
   }
 `;
 
+const IFrameContainer = styled.div`
+  flex: 1;
+  position: relative;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+
+  position: relative;
+  z-index: 10;
+  background: ${({ image }) => `url('${image}')`};
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 0px) {
+    min-height: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: 750px) {
+    min-height: 500px;
+    height: 500px;
+  }
+`;
+
+const YoutubeVideo = styled.iframe`
+  aspect-ratio: 16/16;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: 0px) {
+    min-height: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: 750px) {
+    min-height: 500px;
+    height: 500px;
+  }
+`;
+
 const Content = styled.div`
   flex: 1;
   display: flex;
@@ -53,6 +94,7 @@ const Content = styled.div`
 `;
 
 const SideBySide = ({
+  iFrameLink,
   coordinates,
   className,
   imagePosition,
@@ -87,6 +129,19 @@ const SideBySide = ({
     <Container className={className} imagePosition={imagePosition}>
       {image && <Image image={image} />}
       {coordinates && <div ref={mapContainer} className="map-container" />}
+      {iFrameLink && (
+        <IFrameContainer>
+          <YoutubeVideo
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/GXeNDoYOodY?si=kxAEBmcoxZ3Masd6`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
+        </IFrameContainer>
+      )}
       <Content>{children}</Content>
     </Container>
   );

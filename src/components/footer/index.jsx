@@ -52,12 +52,22 @@ const Footer = () => {
       <Texts>
         <Section>
           <StyledTitle>Lien Utiles</StyledTitle>
-          <Link>Accueil</Link>
-          <Link>Couverture</Link>
-          <Link>Charpente</Link>
-          <Link>Isolation</Link>
-          <Link>Zinguerie</Link>
-          <Link>Démoussage</Link>
+          <Link onClick={() => (window.location.href = "/")}>Accueil</Link>
+          <Link onClick={() => (window.location.href = "/couverture")}>
+            Couverture
+          </Link>
+          <Link onClick={() => (window.location.href = "/charpente")}>
+            Charpente
+          </Link>
+          <Link onClick={() => (window.location.href = "/isolation")}>
+            Isolation
+          </Link>
+          <Link onClick={() => (window.location.href = "/zinguerie")}>
+            Zinguerie
+          </Link>
+          <Link onClick={() => (window.location.href = "/demoussage")}>
+            Démoussage
+          </Link>
         </Section>
         <Section>
           <StyledTitle>Nous Contacter</StyledTitle>
@@ -79,8 +89,12 @@ const Footer = () => {
         </Section>
         <Section>
           <StyledTitle>Légal</StyledTitle>
-          <Link>Politique de confidentialité</Link>
-          <Link>Mentions légales</Link>
+          <Link onClick={() => window.open("/politique", "_blank")}>
+            Politique de confidentialité
+          </Link>
+          <Link onClick={() => window.open("/mentions", "_blank")}>
+            Mentions légales
+          </Link>
         </Section>
       </Texts>
     </Container>

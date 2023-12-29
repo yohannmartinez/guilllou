@@ -58,7 +58,7 @@ const Presentation = () => {
         <Layout>
           <Gap />
           <FadeOnView>
-            <SideBySide image={ImagePresentation}>
+            <SideBySide iFrameLink={"test"}>
               <ContentWrapper>
                 <StyledSectionTitle>
                   L'entreprise Guillou couverture
@@ -74,15 +74,17 @@ const Presentation = () => {
             </SideBySide>
           </FadeOnView>
           <Gap />
+
           <FadeOnView>
-            <SideBySide imagePosition="right" image={Garantie}>
+            <SideBySide imagePosition="right" coordinates={true}>
               <ContentWrapper>
-                <StyledSectionTitle>Une garantie décennale</StyledSectionTitle>
+                <StyledSectionTitle>
+                  La zone d'activité de notre entreprise
+                </StyledSectionTitle>
                 <StyledText>
-                  Tous les travaux effectués par notre entreprises sont
-                  accompagnés d'une garantie décennale en gage de qualité. Nous
-                  tenons à ce que nos clients puisse avancer sereinement avec
-                  les modifications que nous apportons.
+                  Nous intervenons principalement aux alentours de
+                  Saint-Nom-la-Bretèche mais sommes actifs dans tout le
+                  département des Yvelines (78).
                 </StyledText>
                 <StyledButton
                   background="black"
@@ -98,15 +100,14 @@ const Presentation = () => {
           </FadeOnView>
           <Gap />
           <FadeOnView>
-            <SideBySide coordinates={true}>
+            <SideBySide image={Garantie}>
               <ContentWrapper>
-                <StyledSectionTitle>
-                  La zone d'activité de notre entreprise
-                </StyledSectionTitle>
+                <StyledSectionTitle>Une garantie décennale</StyledSectionTitle>
                 <StyledText>
-                  Nous intervenons principalement aux alentours de
-                  Saint-Nom-la-Bretèche mais sommes actifs dans tout le
-                  département des Yvelines (78).
+                  Tous les travaux effectués par notre entreprises sont
+                  accompagnés d'une garantie décennale en gage de qualité. Nous
+                  tenons à ce que nos clients puisse avancer sereinement avec
+                  les modifications que nous apportons.
                 </StyledText>
                 <StyledButton
                   background="black"

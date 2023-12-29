@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 const steps = [
   {
     subTitle: "Guillou couverture",
-    title: "Couverture",
-    buttonText: "En savoir plus",
-    background:
-      "https://www.charpente-classique.com/wp-content/uploads/sites/42/2020/07/calculer-poids-couverture-toiture.jpg",
-  },
-  {
-    subTitle: "Guillou couverture",
     title: "Charpente",
     buttonText: "En savoir plus",
     background:
       "https://www.renovationstoiture.com/wp-content/uploads/sites/9/2020/05/charpentenkit-pouquoi-pas.jpg",
+  },
+  {
+    subTitle: "Guillou couverture",
+    title: "Couverture",
+    buttonText: "En savoir plus",
+    background:
+      "https://www.charpente-classique.com/wp-content/uploads/sites/42/2020/07/calculer-poids-couverture-toiture.jpg",
   },
   {
     subTitle: "Guillou couverture",
