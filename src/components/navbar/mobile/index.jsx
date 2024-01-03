@@ -3,7 +3,7 @@ import Text from "../../text";
 import { colors } from "../../../styles";
 import Button from "../../button";
 import { useLocation } from "react-router-dom";
-import CloseIcon from "../../../assets/images/Frame.svg";
+import CloseIcon from "../../../assets/images/test3.png";
 
 const Container = styled.div`
   position: fixed;
@@ -13,7 +13,6 @@ const Container = styled.div`
   top: 0;
   left: ${({ isShown }) => (isShown ? "0" : "100vw")};
   z-index: 100;
-  transition: 0.1s;
   display: flex;
   justify-content: center;
   align-items: center;

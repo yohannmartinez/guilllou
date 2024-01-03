@@ -68,6 +68,7 @@ const SubTitle = styled(Text)`
 const LettersContainer = styled(motion.div)`
   overflow: hidden;
   margin-bottom: 40px;
+  padding: 0 5px;
 `;
 
 const Letter = styled(motion.div)`
@@ -76,6 +77,21 @@ const Letter = styled(motion.div)`
   font-weight: 600;
   display: inline-block;
   letter-spacing: -4.5px;
+  @media (max-width: 680px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 544px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 475px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 40px;
+  }
 `;
 
 const Steps = styled(motion.div)`
