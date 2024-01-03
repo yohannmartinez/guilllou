@@ -15,6 +15,7 @@ import FadeOnView from "../fadeOnview";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  overflow: hidden;
   margin: 100px 0;
 `;
 

@@ -29,17 +29,32 @@ const Texts = styled.div`
     justify-content: flex-start;
   }
 `;
-const Section = styled.div``;
+const Section = styled.div`
+  @media (max-width: 488px) {
+    width: 100%;
+  }
+`;
 
 const StyledTitle = styled(Text)`
   color: white;
   font-weight: bold;
   margin-bottom: 1em;
+  text-align: left;
+
+  @media (max-width: 488px) {
+    text-align: center;
+  }
 `;
 
 const Link = styled(Text)`
   color: #d3d3d3;
   cursor: pointer;
+  text-align: center;
+  text-align: left;
+
+  @media (max-width: 488px) {
+    text-align: center;
+  }
   &:hover {
     color: white;
   }

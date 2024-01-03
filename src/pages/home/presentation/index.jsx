@@ -51,6 +51,14 @@ const Gap = styled.div`
 const StyledButton = styled(Button)`
   margin-top: 2em;
 `;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  @media (max-width: 750px) {
+    justify-content: center;
+  }
+`;
+
 const Presentation = () => {
   return (
     <Wrapper>
@@ -86,15 +94,17 @@ const Presentation = () => {
                   Saint-Nom-la-Bretèche mais sommes actifs dans tout le
                   département des Yvelines (78).
                 </StyledText>
-                <StyledButton
-                  background="black"
-                  color="white"
-                  onClick={() =>
-                    (window.location.href = "mailto:0610400001@orange.fr")
-                  }
-                >
-                  Faire un devis
-                </StyledButton>
+                <ButtonContainer>
+                  <StyledButton
+                    background="black"
+                    color="white"
+                    onClick={() =>
+                      (window.location.href = "mailto:0610400001@orange.fr")
+                    }
+                  >
+                    Faire un devis
+                  </StyledButton>
+                </ButtonContainer>
               </ContentWrapper>
             </SideBySide>
           </FadeOnView>
@@ -109,15 +119,17 @@ const Presentation = () => {
                   tenons à ce que nos clients puisse avancer sereinement avec
                   les modifications que nous apportons.
                 </StyledText>
-                <StyledButton
-                  background="black"
-                  color="white"
-                  onClick={() =>
-                    (window.location.href = "mailto:0610400001@orange.fr")
-                  }
-                >
-                  Faire un devis
-                </StyledButton>
+                <ButtonContainer>
+                  <StyledButton
+                    background="black"
+                    color="white"
+                    onClick={() =>
+                      (window.location.href = "mailto:0610400001@orange.fr")
+                    }
+                  >
+                    Faire un devis
+                  </StyledButton>
+                </ButtonContainer>
               </ContentWrapper>
             </SideBySide>
           </FadeOnView>

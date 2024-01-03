@@ -84,10 +84,20 @@ const StyledSectionTitle = styled(SectionTitle)`
 
 const Gap = styled.div`
   height: 12em;
+  @media (max-width: 600px) {
+    height: 7em;
+  }
 `;
 
 const StyledButton = styled(Button)`
   margin-top: 2em;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  @media (max-width: 750px) {
+    justify-content: center;
+  }
 `;
 
 const Presentation = () => {
@@ -114,15 +124,17 @@ const Presentation = () => {
                   interventions et les travaux appropriés pour préserver son
                   étanchéité et sa durabilité au fil du temps.
                 </StyledText>
-                <StyledButton
-                  background="black"
-                  color="white"
-                  onClick={() =>
-                    (window.location.href = "mailto:0610400001@orange.fr")
-                  }
-                >
-                  Faire un devis
-                </StyledButton>
+                <ButtonContainer>
+                  <StyledButton
+                    background="black"
+                    color="white"
+                    onClick={() =>
+                      (window.location.href = "mailto:0610400001@orange.fr")
+                    }
+                  >
+                    Faire un devis
+                  </StyledButton>
+                </ButtonContainer>
               </ContentWrapper>
             </SideBySide>
             <Gap />
@@ -156,15 +168,17 @@ const Presentation = () => {
                   Saint-Nom-la-Bretèche mais sommes actifs dans tout le
                   département des Yvelines (78).
                 </StyledText>
-                <StyledButton
-                  background="black"
-                  color="white"
-                  onClick={() =>
-                    (window.location.href = "mailto:0610400001@orange.fr")
-                  }
-                >
-                  Faire un devis
-                </StyledButton>
+                <ButtonContainer>
+                  <StyledButton
+                    background="black"
+                    color="white"
+                    onClick={() =>
+                      (window.location.href = "mailto:0610400001@orange.fr")
+                    }
+                  >
+                    Faire un devis
+                  </StyledButton>
+                </ButtonContainer>
               </ContentWrapper>
             </SideBySide>
           </StyledLayout>

@@ -2,11 +2,14 @@ import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
 import LogoSvg from "../../assets/images/minLogo.png";
+import MenuSvg from "../../assets/images/Vector.svg";
 import PageWrap from "../pageWrap";
 import Text from "../text";
 import { colors } from "../../styles";
 import Button from "../button";
 import { useLocation } from "react-router-dom";
+import MobileMenu from "./mobile";
+import { useState } from "react";
 
 const Container = styled(motion.div)`
   display: flex;
@@ -20,6 +23,12 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1000px) {
+    padding: 15px 0px;
+  }
+  @media (max-width: 920px) {
+    padding: 15px 0px;
+  }
 `;
 
 const Logo = styled.div`
@@ -29,10 +38,30 @@ const Logo = styled.div`
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 920px) {
+    height: 40px;
+    width: 40px;
+  }
+`;
+
+const Menu = styled.div`
+  height: 22px;
+  width: 22px;
+  background: ${() => `url('${MenuSvg}')`};
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @media (min-width: 920px) {
+    display: none;
+  }
 `;
 
 const LinksContainer = styled.div`
   display: flex;
+  @media (max-width: 920px) {
+    display: none;
+  }
 `;
 
 const Link = styled.div`
@@ -59,6 +88,12 @@ const Navbar = ({ bottomBar }) => {
   const location = useLocation();
   const path = location.pathname;
   const isCurrentLocation = (route) => route === path;
+  const [isMenuShown, setIsMenuShown] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuShown(!isMenuShown);
+  };
+
   return (
     <Container
       bottomBar={bottomBar}
@@ -69,6 +104,8 @@ const Navbar = ({ bottomBar }) => {
       <PageWrap>
         <Wrapper>
           <Logo />
+          <Menu onClick={toggleMenu} />
+          <MobileMenu isShown={isMenuShown} toggleMenu={toggleMenu} />
           <LinksContainer>
             <Link onClick={() => (window.location.href = "/")}>
               <StyledText color={colors.text} isBold={isCurrentLocation("/")}>
