@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
 import LogoSvg from "../../assets/images/minLogo.png";
-import MenuSvg from "../../assets/images/Vector.svg";
+import MenuSvg from "../../assets/images/test.png";
 import PageWrap from "../pageWrap";
 import Text from "../text";
 import { colors } from "../../styles";
@@ -45,8 +45,8 @@ const Logo = styled.div`
 `;
 
 const Menu = styled.div`
-  height: 22px;
-  width: 22px;
+  height: 25px;
+  width: 25px;
   background: ${() => `url('${MenuSvg}')`};
   background-size: contain;
   background-position: center;
