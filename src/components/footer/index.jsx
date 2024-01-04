@@ -86,7 +86,7 @@ const Footer = () => {
         </Section>
         <Section>
           <StyledTitle>Nous Contacter</StyledTitle>
-          <Link onClick={() => window.open("tel:+33630587266", "_self")}>
+          <Link onClick={() => window.open("tel:+33610400001", "_self")}>
             Téléphone
           </Link>
           <Link
