@@ -12,7 +12,8 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "source": "dist"
+    "source": "dist",
+    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable"
   },
   "dependencies": {
     "framer-motion": "^10.16.8",
