@@ -16,6 +16,10 @@ const Couverture = () => {
         <title>
           Travaux de couverture et rénovation de votre toiture dans le 78
         </title>
+        <link
+          rel="canonical"
+          href="http://guillou-couverture78.fr/couverture"
+        />
         <meta
           name="description"
           content="Un projet de couverture ? Notre société Guillou Couverture met à votre service son experience de plus de 20 ans autour de Saint-nom-la-breteche et dans le 78"

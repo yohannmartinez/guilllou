@@ -14,6 +14,7 @@ const Isolation = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Isolation de votre maison dans le 78</title>
+        <link rel="canonical" href="http://guillou-couverture78.fr/isolation" />
         <meta
           name="description"
           content="Un projet d'isolation ? Notre société Guillou Couverture met à votre service son experience de plus de 20 ans autour de Saint-nom-la-breteche et dans le 78"

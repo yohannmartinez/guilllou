@@ -14,6 +14,7 @@ const Charpente = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Travaux de charpente dans le 78</title>
+        <link rel="canonical" href="http://guillou-couverture78.fr/charpente" />
         <meta
           name="description"
           content="Un projet de charpente ? Notre société Guillou couverture met à votre service son experience de plus de 20 ans autour de Saint-nom-la-breteche et dans le 78"
