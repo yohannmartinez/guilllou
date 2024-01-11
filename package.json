@@ -13,7 +13,10 @@
   },
   "reactSnap": {
     "source": "dist",
-    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable"
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "framer-motion": "^10.16.8",
