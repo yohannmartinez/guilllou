@@ -12,7 +12,6 @@ const Zinguerie = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Travaux de zinguerie dans le 78</title>
-        <link rel="canonical" href="http://guillou-couverture78.fr/zinguerie" />
         <meta
           name="description"
           content="Un projet de zinguerie ? Notre société Guillou couverture met à votre service son experience de plus de 20 ans autour de Saint-nom-la-breteche et dans le 78"
